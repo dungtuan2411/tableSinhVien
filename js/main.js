@@ -1,12 +1,12 @@
-function getMyID(id) {
+function getMyEle(id) {
   return document.getElementById(id);
 }
 function layThongTin() {
-  var maSinhVien = getMyID('maSV').value;
-  var tenSinhVien = getMyID('tenSV').value;
-  var loaiSinhVien = getMyID("loaiSV").value;
-  var diemToan = parseFloat(getMyID('diemToan').value);
-  var diemVan = parseFloat(getMyID('diemVan').value);
+  var maSinhVien = getMyEle('maSV').value;
+  var tenSinhVien = getMyEle('tenSV').value;
+  var loaiSinhVien = getMyEle("loaiSV").value;
+  var diemToan = parseFloat(getMyEle('diemToan').value);
+  var diemVan = parseFloat(getMyEle('diemVan').value);
 // Đối tượng
   var sinhVien = {
     maSV: maSinhVien,
@@ -33,11 +33,11 @@ function layThongTin() {
     }
   }
   // Hiển thị
-  getMyID('spanMaSV').innerHTML = sinhVien.maSV;
-  getMyID('spanTenSV').innerHTML = sinhVien.tenSV;
-  getMyID('spanLoaiSV').innerHTML = sinhVien.loaiSV;
-  getMyID('spanTB').innerHTML = sinhVien.tinhDiemTB();
-  getMyID('spanXepLoai').innerHTML = sinhVien.xepLoaiSV();
+  getMyEle('spanMaSV').innerHTML = sinhVien.maSV;
+  getMyEle('spanTenSV').innerHTML = sinhVien.tenSV;
+  getMyEle('spanLoaiSV').innerHTML = sinhVien.loaiSV;
+  getMyEle('spanTB').innerHTML = sinhVien.tinhDiemTB();
+  getMyEle('spanXepLoai').innerHTML = sinhVien.xepLoaiSV();
 }
 
 
