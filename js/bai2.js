@@ -26,7 +26,7 @@ function hienThi(){
     inThongTin();
 }
 function inThongTin() {
-    var tbodySV = getMyEle('tbodySinhVien');
+    var tbodySV = getMyEle('tbodySinhVien'); // Dom đến tbody
     tbodySV.innerHTML = "";
     // Duyệt mảng bằng for
     for (let i = 0; i < mangSinhVien.length; i++) {
